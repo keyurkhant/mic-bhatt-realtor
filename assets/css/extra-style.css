@@ -1,0 +1,47 @@
+/* Example background styling */
+#header {
+    position: relative;
+    /* If not already set in your global CSS, specify the background here */
+    background: url("../../images/house.jpg") no-repeat center center/cover;
+    color: #fff;
+    /* White text */
+    text-align: center;
+    padding: 100px 20px;
+    /* Enough padding to make it spacious */
+    overflow: hidden;
+}
+
+/* Create a dark overlay */
+#header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* top:0; right:0; bottom:0; left:0; */
+    background: rgba(0, 0, 0, 0.5);
+    /* Adjust for desired darkness */
+    z-index: 0;
+}
+
+#header .inner {
+    position: relative;
+    z-index: 1;
+    /* Ensures content is above the overlay */
+}
+
+/* Add subtle text-shadow for legibility */
+#header h1,
+#header h3,
+#header .actions {
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Another style for Greater Toronto Area, e.g., a fancy underline or color */
+.gta-style {
+    background: linear-gradient(45deg, #D65C5C, #D65C5C);
+    position: relative;
+    padding: 3px 6px;
+    border-radius: 4px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+}
