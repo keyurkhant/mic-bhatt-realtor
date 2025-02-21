@@ -45,3 +45,33 @@
     text-transform: uppercase;
     font-weight: bold;
 }
+
+.first-section {
+    padding-bottom: 0;
+}
+
+.second-section {
+    padding-top: 3em;
+}
+
+.explore-button {
+    background-color: #D65C5C;
+    color: #ffffff !important;
+    cursor: pointer;
+    transition: background-color 0.3s,
+                box-shadow 0.3s;
+    display: inline-block;
+  }
+  
+  /* Darken background, add subtle shadow on hover */
+  .explore-button:hover {
+    background-color: #C44F4F;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Optional focus styles for accessibility */
+  .explore-button:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(214, 92, 92, 0.5);
+  }
+  
